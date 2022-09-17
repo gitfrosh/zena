@@ -2,21 +2,34 @@ import { Link } from "react-router-dom";
 
 export default function Chapters() {
   const chapters = [
-    { name: "Web3 Basics", path: "/1", url: '/Kachel-1_Web3-basics.jpg' },
-    { name: "Blockchain und Token", path: "/2", url: '/Kachel-2_Blockchain.jpg' },
-    { name: "NFT", path: "/3", url: '/blockchain-and-token.png' },
-    { name: "Wallets / Schlüssel-verwahrung", path: "/4", url: '/blockchain-and-token.png' },
-    { name: "NFT minten", path: "/5", url: '/blockchain-and-token.png' },
-    { name: "DAOs", path: "/6", url: '/blockchain-and-token.png' },
-    { name: "DEFI und REFI", path: "/6", url: '/blockchain-and-token.png' },
+    { name: "Web3 Basics", path: "/1", url: "/Kachel-1_Web3-basics.jpg" },
+    {
+      name: "Blockchain und Token",
+      path: "/2",
+      url: "/Kachel-2_Blockchain.jpg",
+    },
+    { name: "NFT", path: "/3", url: "/blockchain-and-token.png" },
+    {
+      name: "Wallets / Schlüssel-verwahrung",
+      path: "/4",
+      url: "/blockchain-and-token.png",
+    },
+    { name: "NFT minten", path: "/5", url: "/blockchain-and-token.png" },
+    { name: "DAOs", path: "/6", url: "/blockchain-and-token.png" },
+    { name: "DEFI und REFI", path: "/6", url: "/blockchain-and-token.png" },
   ];
 
   return (
     <div className="container mx-auto pt-12 pb-12">
       <div className="border-b border-gray-200 pb-5">
-        <h2 className="text-2xl text-center font-bold leading-7 sm:truncate sm:text-3xl sm:tracking-tight">
-          Kapitel
+        <h2 className="text-2xl text-center font-bold mb-2 mt-4 leading-7 sm:truncate sm:text-3xl sm:tracking-tight">
+          Deine Lernkapitel
         </h2>
+        <p className="text-lg font-medium text-center text-gray-600">
+          Beginne jetzt deine reise ins Web3! Beginne mit den ersten beiden{" "}
+          <br />
+          Einführungskapiteln und such dir dann dein Lieblingsthema aus.
+        </p>
       </div>
       <div className="grid grid-cols-4 gap-4 pt-12">
         {chapters.map((chapter: any) => {
