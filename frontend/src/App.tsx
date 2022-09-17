@@ -1,17 +1,16 @@
 import { RecoilRoot } from "recoil";
 import { useState } from "react";
 import Onboarding from "./pages/Onboarding";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  HashRouter,
+} from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Chapter from "./pages/Chapter";
 import WalletModal from "./components/Wallet/Modal";
-
-const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
-];
+import IpfsRouter from "ipfs-react-router";
 
 export default function App() {
   const [isLoggedIn, setLoggedIn] = useState(false);
@@ -69,7 +68,11 @@ export default function App() {
     <RecoilRoot>
       <WalletModal />
 
-      <Router>
+      <IpfsRouter
+      // basename={optionalString}
+      // getUserConfirmation={optionalFunc}
+      // hashType={optionalString}
+      >
         <Switch>
           <Route path="/onboarding">
             <Onboarding />
@@ -84,7 +87,7 @@ export default function App() {
             <Start />
           </Route>
         </Switch>
-      </Router>
+      </IpfsRouter>
     </RecoilRoot>
   );
 }
