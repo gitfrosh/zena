@@ -8,15 +8,14 @@ export default function Chapters() {
       path: "/2",
       url: "/Kachel-2_Blockchain.jpg",
     },
-    { name: "NFT", path: "/3", url: "/blockchain-and-token.png" },
+    { name: "NFT minten", path: "/3", url: "/kachel-4_mint.jpg" },
     {
       name: "Wallets / Schlüssel-verwahrung",
       path: "/4",
-      url: "/blockchain-and-token.png",
+      url: "/kachel-3_wallet.jpg",
     },
-    { name: "NFT minten", path: "/5", url: "/blockchain-and-token.png" },
-    { name: "DAOs", path: "/6", url: "/blockchain-and-token.png" },
-    { name: "DEFI und REFI", path: "/6", url: "/blockchain-and-token.png" },
+    { name: "DAOs", path: "/5", url: "/Kachel-5_Dao.jpg" },
+    { name: "DEFI und REFI", path: "/6", url: "/kachel-6_defi.jpg" },
   ];
 
   return (
@@ -25,6 +24,7 @@ export default function Chapters() {
         <h2 className="text-2xl text-center font-bold mb-2 mt-4 leading-7 sm:truncate sm:text-3xl sm:tracking-tight">
           Deine Lernkapitel
         </h2>
+
         <p className="text-lg font-medium text-center text-gray-600">
           Beginne jetzt deine reise ins Web3! Beginne mit den ersten beiden{" "}
           <br />
@@ -34,7 +34,7 @@ export default function Chapters() {
       <div className="grid grid-cols-4 gap-4 pt-12">
         {chapters.map((chapter: any) => {
           return (
-            <div className="col-span-2">
+            <div className="col-span-4 md:col-span-2">
               <div className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                 <svg
                   className="mb-2 w-10 h-10 text-gray-500 dark:text-gray-400"
@@ -58,7 +58,7 @@ export default function Chapters() {
                     {chapter.name}
                   </h5>
                 </Link>
-                <img src={chapter.url} alt="" />
+                <img src={chapter.url} alt="" className="" />
                 <Link
                   to={`/chapters${chapter.path}`}
                   className="mt-3 inline-flex items-center text-blue-600 hover:underline w-full"
