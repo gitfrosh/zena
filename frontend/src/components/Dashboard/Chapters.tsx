@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 
 export default function Chapters() {
   const chapters = [
-    { name: "Intro", path: "/1" },
-    { name: "Wallet", path: "/2" },
-    { name: "NFT", path: "/3" },
-    { name: "Security", path: "/4" },
-    { name: "DAOs", path: "/5" },
-    { name: "DEFI", path: "/6" },
+    { name: "Web3 Basics", path: "/1" },
+    { name: "Blockchain und Token", path: "/2" },
+    { name: "Wallet / Schlüssel-verwahrer", path: "/3" },
+    { name: "NFT minten", path: "/4" },
+    { name: "DAO", path: "/5" },
+    { name: "Defi und Refi", path: "/6" },
   ];
 
   return (

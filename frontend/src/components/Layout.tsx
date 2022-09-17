@@ -11,7 +11,7 @@ const user = {
 };
 
 export default function App({ children }: any) {
-  const [isWalletOpen, setWalletOpen] = useRecoilState(walletOpen);
+  const [, setWalletOpen] = useRecoilState(walletOpen);
 
   return (
     <>

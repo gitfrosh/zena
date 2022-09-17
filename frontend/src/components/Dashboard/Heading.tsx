@@ -1,5 +1,3 @@
-import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/20/solid'
-
 const profile = {
     name: 'Ricardo Cooper',
     email: 'ricardo.cooper@example.com',
