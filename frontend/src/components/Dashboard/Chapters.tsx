@@ -17,7 +17,7 @@ export default function Chapters() {
           Kapitel
         </h2>
       </div>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-4 gap-4 pt-12">
         {chapters.map((chapter: any) => {
           return (
             <div className="col-span-4">
