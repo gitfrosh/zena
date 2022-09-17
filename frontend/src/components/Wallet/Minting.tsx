@@ -7,7 +7,7 @@ export default function Minting() {
   if (!shouldMint) return null;
 
   return (
-    <div className="rounded-md bg-yellow-50 p-4">
+    <div className="rounded-md bg-yellow-50 p-4 mb-12">
       <div className="flex">
         <div className="flex-shrink-0">
           <ExclamationTriangleIcon
