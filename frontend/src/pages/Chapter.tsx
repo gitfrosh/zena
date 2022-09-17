@@ -42,6 +42,10 @@ const NFTMint = () => {
         Community, Events, Gaming, etc. Hier ist ein Impact NFT als Beispiel Mit
         dem Minten dieses Baum NFTs pflanzt die Community pro NFT einen Baum.
       </p>
+      <p className="pb-12">
+        Im folgenden wird dein Baum-NFT geprägt und die Eigentumsrechte auf der
+        Blockchain festgeschrieben.
+      </p>
       <button
         onClick={() => {
           setOpen(true);
