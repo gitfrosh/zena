@@ -15,6 +15,7 @@ export const userState = atom({
   key: "userState",
   default: {
     name: "Blue",
+    nft: 0,
     imageUrl:
       "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
   },
