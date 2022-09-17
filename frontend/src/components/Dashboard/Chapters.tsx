@@ -14,8 +14,7 @@ export default function Chapters() {
       path: "/4",
       url: "/kachel-3_wallet.jpg",
     },
-    { name: "DAOs", path: "/5", url: "/Kachel-5_Dao.jpg" },
-    { name: "DEFI und REFI", path: "/6", url: "/kachel-6_defi.jpg" },
+    { name: "DAOs", path: "/5", url: "/Kachel-5_Dao.jpg" }
   ];
 
   return (
