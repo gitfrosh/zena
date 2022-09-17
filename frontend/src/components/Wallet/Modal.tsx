@@ -1,10 +1,12 @@
 import { CurrencyDollarIcon } from "@heroicons/react/24/outline";
-import { userState, walletOpenState } from "../../utils/store";
+import { mintState, userState, walletOpenState } from "../../utils/store";
 import { useRecoilState } from "recoil";
+import Minting from "./Minting";
 
 export default function Modal() {
   const [open, setOpen] = useRecoilState(walletOpenState);
   const [user, setUser] = useRecoilState(userState);
+
   if (!open) return null;
 
   return (
@@ -78,6 +80,7 @@ export default function Modal() {
                 >
                   <div className="w-full border-t border-gray-300" />
                 </div>
+                <Minting />
                 <div className="border-b border-gray-200 pb-5">
                   <h3 className="text-lg font-medium leading-6 text-gray-900">
                     {user.name}'s NFTs

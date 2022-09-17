@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
+import { useRecoilState } from "recoil";
 import Title from "../components/Chapter/Title";
 import Layout from "../components/Layout";
 import tree from "../images/tree.jpg"; // Tell webpack this JS file uses this image
+import { mintState, walletOpenState } from "../utils/store";
 
 const NFTStep1 = () => {
   return (
@@ -29,7 +31,28 @@ const NFTStep2 = () => {
 };
 
 const NFTMint = () => {
-  return <img style={{ display: "unset" }} src={tree} alt="Baum" />;
+  const [shouldMint, setMint] = useRecoilState(mintState);
+  const [open, setOpen] = useRecoilState(walletOpenState);
+
+  return (
+    <>
+      <img style={{ display: "unset", width: 200 }} src={tree} alt="Baum" />
+      <p className="p-12">
+        Für NFT gibt es verschiedene Anwendungsbeispiele, digitale Kunst,
+        Community, Events, Gaming, etc. Hier ist ein Impact NFT als Beispiel Mit
+        dem Minten dieses Baum NFTs pflanzt die Community pro NFT einen Baum.
+      </p>
+      <button
+        onClick={() => {
+          setOpen(true);
+          setMint(true);
+        }}
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+      >
+        Weiter
+      </button>
+    </>
+  );
 };
 
 const NFTQuiz = () => {
@@ -57,12 +80,14 @@ export default function Chapter() {
         <div className="mx-auto max-w-3xl">
           {(params as any).chapterId === "3" && <NFT />}
 
-          <button
-            onClick={() => setStep(step + 1)}
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
-          >
-            Weiter
-          </button>
+          {(step === 1 || step === 2) && (
+            <button
+              onClick={() => setStep(step + 1)}
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+            >
+              Weiter
+            </button>
+          )}
         </div>
       </div>
     </Layout>

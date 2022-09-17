@@ -25,5 +25,10 @@ export const walletOpenState = atom({
   default: false,
 });
 
+export const mintState = atom({
+  key: "mintState",
+  default: false,
+});
+
 // example on how to use in component:
 // const [text, setText] = useRecoilState(textState);
