@@ -5,15 +5,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Chapter from "./pages/Chapter";
 
-const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
-];
-
 export default function App() {
-  const [isLoggedIn, setLoggedIn] = useState(false);
+  const [isLoggedIn,] = useState(false);
 
   const Start = () => {
     return (
@@ -23,13 +16,12 @@ export default function App() {
             <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
               <div className="sm:text-center lg:text-left">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-                  <span className="block xl:inline">Willkommen bei</span>{" "}
-                  <span className="block text-indigo-600 xl:inline">zena</span>
+                  <span className="block text-indigo-600 xl:inline">Z3na</span>{' '}
+                  <span className="block xl:inline">Dein Start ins Web3 </span>
                 </h1>
                 <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                  occaecat fugiat aliqua.
+                Hype, Scam, Revolution? 
+                Web3, Blockchain, Kryptographie, Token, NFT und vieles mehr
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">

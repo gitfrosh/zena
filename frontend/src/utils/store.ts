@@ -21,5 +21,10 @@ export const walletOpen = atom({
   default: false,
 });
 
+export const avatarNumber = atom({
+  key: "avatarNumber",
+  default: 0,
+});
+
 // example on how to use in component:
 // const [text, setText] = useRecoilState(textState);
