@@ -6,28 +6,28 @@ export default function Heading() {
 
   return (
     <div>
-      <div style={{ height: 180, backgroundColor: "green" }}></div>
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 md:flex">
-        <div className="-mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5 flex-1">
-          <div className="mt-6 sm:flex sm:min-w-0 sm:flex-1 sm:items-center sm:justify-end sm:space-x-6 sm:pb-1">
-            <div className="mt-6 min-w-0 flex-1 hidden md:block">
-              <h1 className="truncate text-2xl font-bold text-gray-900 sm:hidden">
-                Hi, {user.name}!
-              </h1>
-            </div>
-            <div className="justify-stretch mt-6 flex flex-col space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4"></div>
-          </div>
+      <div style={{ height: 80, backgroundColor: "green" }}></div>
+      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div className="-mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5">
           <div className="flex">
             <img
+              style={{ backgroundColor: "aliceblue" }}
               className="h-24 w-24 rounded-full ring-4 ring-white sm:h-32 sm:w-32"
               src={user.imageUrl}
               alt=""
             />
           </div>
+          <div className="mt-6 sm:flex sm:min-w-0 sm:flex-1 sm:items-center sm:justify-end sm:space-x-6 sm:pb-1">
+            <div className="mt-6 min-w-0 flex-1 sm:hidden md:block">
+              <h1 className="truncate text-2xl font-bold text-gray-900">
+                Hallo {user.name}!
+              </h1>
+            </div>
+          </div>
         </div>
-        <div className="mt-6 min-w-0 flex-1 sm:block md:hidden lg:hidden">
+        <div className="mt-6 hidden min-w-0 flex-1 sm:block md:hidden">
           <h1 className="truncate text-2xl font-bold text-gray-900">
-            Hi, {user.name}!
+            Hallo {user.name}!
           </h1>
         </div>
       </div>

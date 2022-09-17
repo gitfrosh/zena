@@ -39,14 +39,14 @@ export default function App({ children }: any) {
                             aria-hidden="true"
                           />
                         </button>
-                        <button className="flex rounded-full bg-indigo-600 text-sm text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600">
+                        {/* <button className="flex rounded-full bg-indigo-600 text-sm text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600">
                           <span className="sr-only">Open user menu</span>
                           <img
                             className="h-12 w-12 rounded-full"
                             src={user.imageUrl}
                             alt=""
                           />
-                        </button>
+                        </button> */}
                       </div>
                     </div>
                   </div>

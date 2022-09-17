@@ -1,9 +1,13 @@
+import { QuestionMarkCircleIcon } from "@heroicons/react/24/outline";
+
 export default function Stats() {
   return (
-    <div className="container mx-auto pt-12">
+    <div className="container mx-auto pt-6">
       <div className="grid grid-cols-6 gap-4">
         <div className="col-span-3">
-          <p>Kapitel (2/6)</p>
+          <div className="flex">
+            Kapitel (2/6) <QuestionMarkCircleIcon width="15" />
+          </div>
           <div className="w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
             <div
               style={{ width: "30%" }}
@@ -13,7 +17,9 @@ export default function Stats() {
         </div>
 
         <div className="col-span-3">
-          <p>Punkte (18/60)</p>
+          <div className="flex">
+            Punkte (18/60) <QuestionMarkCircleIcon width="15" />
+          </div>
           <div className="w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
             <div
               style={{ width: "25%" }}

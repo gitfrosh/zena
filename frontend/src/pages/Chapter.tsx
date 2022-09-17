@@ -8,24 +8,21 @@ import { mintState, walletOpenState } from "../utils/store";
 
 const NFTStep1 = () => {
   return (
-    <p className="p-12">
-      Im Gegensatz zu fungiblen Token (z. B. ETH, SOL,..) ist ein NFT ein
-      einzigartiger digitaler Vermögenswert, der nicht eins zu eins gegen einen
-      anderen getauscht werden kann - nur der Besitznachweis wird auf der
-      Blockchain festgeschrieben, das “Medium” dahinter (z. B. die Bilddatei des
-      NFT-Kunstwerks), wird meist ganz normal auf einem Server gespeichert und
-      kann hunderfach kopiert werden.
+    <p className="p-5">
+      Im Gegensatz zu fungiblen Token (z. B. Ether) ist ein NFT ein
+      einzigartiger digitaler Vermögenswert und der Besitznachweis wird auf der
+      Blockchain festgeschrieben.
     </p>
   );
 };
 
 const NFTStep2 = () => {
   return (
-    <p className="p-12">
+    <p className="p-5">
       Minten bedeutet so viel wie Prägung. Digitale Dateien werden in
-      verschlüsselte Sammlerstücke umgewandelt. Hochladen des NFTs in die
-      jeweilige Blockchain Sobald digitale Objekte auf der Blockchain
-      gespeichert sind, ist eine Umwandlung oder Löschung nicht mehr möglich.
+      verschlüsselte Sammlerstücke umgewandelt. Sobald digitale Objekte auf der
+      Blockchain gespeichert sind, ist eine Umwandlung oder Löschung nicht mehr
+      möglich.
     </p>
   );
 };
@@ -37,15 +34,12 @@ const NFTMint = () => {
   return (
     <>
       <img style={{ display: "unset", width: 200 }} src={tree} alt="Baum" />
-      <p className="p-12">
-        Für NFT gibt es verschiedene Anwendungsbeispiele, digitale Kunst,
-        Community, Events, Gaming, etc. Hier ist ein Impact NFT als Beispiel Mit
-        dem Minten dieses Baum NFTs pflanzt die Community pro NFT einen Baum.
+      <p className="p-5">
+        Hier stellen wir dir ein NFT-Projekt vor: Mit dem Minten dieses Baum
+        NFTs pflanzt die Community pro NFT einen Baum. Wenn du den NFT mintest,
+        wird dein Eigentum auf der Blockchain festgeschrieben.
       </p>
-      <p className="pb-12">
-        Im folgenden wird dein Baum-NFT geprägt und die Eigentumsrechte auf der
-        Blockchain festgeschrieben.
-      </p>
+
       <button
         onClick={() => {
           setOpen(true);
