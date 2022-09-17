@@ -21,10 +21,17 @@ export default function App() {
                   <span className="block text-indigo-600 xl:inline">ZENA</span>{' '}
                   <span className="block xl:inline">Dein Start ins Web3 </span>
                 </h1>
-                <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
+                <p className="mt-3 mb-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
                 Hype, Scam, Revolution? 
                 Web3, Blockchain, Kryptographie, Token, NFT und vieles mehr
                 </p>
+                <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+                  <img
+                    className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
+                    src="/Onboarding-1.jpeg"
+                    alt=""
+                  />
+                </div>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
                     <Link
@@ -47,13 +54,7 @@ export default function App() {
             </main>
           </div>
         </div>
-        <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img
-            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
-            src="/Onboarding-1.jpeg"
-            alt=""
-          />
-        </div>
+        
       </div>
     );
   };
