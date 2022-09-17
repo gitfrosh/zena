@@ -18,7 +18,7 @@ export const userState = atom({
   },
 });
 
-export const walletOpen = atom({
+export const walletOpenState = atom({
   key: "walletOpen",
   default: false,
 });

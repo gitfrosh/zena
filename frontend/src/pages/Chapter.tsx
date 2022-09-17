@@ -29,7 +29,7 @@ const NFTStep2 = () => {
 };
 
 const NFTMint = () => {
-  return <img src={tree} alt="Baum" />;
+  return <img style={{ display: "unset" }} src={tree} alt="Baum" />;
 };
 
 const NFTQuiz = () => {

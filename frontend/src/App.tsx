@@ -4,6 +4,7 @@ import Onboarding from "./pages/Onboarding";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Chapter from "./pages/Chapter";
+import WalletModal from "./components/Wallet/Modal";
 
 const navigation = [
   { name: "Product", href: "#" },
@@ -66,6 +67,8 @@ export default function App() {
 
   return (
     <RecoilRoot>
+      <WalletModal />
+
       <Router>
         <Switch>
           <Route path="/onboarding">

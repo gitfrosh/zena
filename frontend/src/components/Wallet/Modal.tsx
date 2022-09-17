@@ -1,11 +1,10 @@
 import { CurrencyDollarIcon } from "@heroicons/react/24/outline";
-import { userState, walletOpen } from "../../utils/store";
+import { userState, walletOpenState } from "../../utils/store";
 import { useRecoilState } from "recoil";
 
 export default function Modal() {
-  const [open, setOpen] = useRecoilState(walletOpen);
-  const [user] = useRecoilState(userState);
-
+  const [open, setOpen] = useRecoilState(walletOpenState);
+  const [user, setUser] = useRecoilState(userState);
   if (!open) return null;
 
   return (

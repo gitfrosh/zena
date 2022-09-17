@@ -1,7 +1,7 @@
 import { Disclosure } from "@headlessui/react";
 import { BellIcon, WalletIcon } from "@heroicons/react/24/outline";
 import { useRecoilState } from "recoil";
-import { walletOpen } from "../utils/store";
+import { walletOpenState } from "../utils/store";
 
 const user = {
   name: "Tom Cook",
@@ -11,8 +11,8 @@ const user = {
 };
 
 export default function App({ children }: any) {
-  const [, setWalletOpen] = useRecoilState(walletOpen);
-
+  const [isWalletOpen, setWalletOpen] = useRecoilState(walletOpenState);
+  console.log(isWalletOpen);
   return (
     <>
       <div className="min-h-full">
@@ -44,7 +44,7 @@ export default function App({ children }: any) {
                           <BellIcon className="h-12 w-12" aria-hidden="true" />
                         </button>
                         <button
-                          onClick={() => setWalletOpen(true)}
+                          onClick={() => setWalletOpen(!isWalletOpen)}
                           type="button"
                           className="flex-shrink-0 rounded-full bg-indigo-600 p-1 text-indigo-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
                         >
