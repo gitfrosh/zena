@@ -1,5 +1,5 @@
 import { Disclosure } from "@headlessui/react";
-import { BellIcon, WalletIcon } from "@heroicons/react/24/outline";
+import { WalletIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { userState, walletOpenState } from "../utils/store";
@@ -22,7 +22,7 @@ export default function App({ children }: any) {
                     <div className="flex items-center px-2 lg:px-0">
                       <div className="flex-shrink-0">
                         <Link to="/">
-                          <span className="text-white">zena</span>
+                          <span className="text-white">ZENA</span>
                         </Link>
                       </div>
                     </div>
