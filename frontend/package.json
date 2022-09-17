@@ -47,7 +47,7 @@
     ]
   },
   "engines": {
-    "node": "16.4.2"
+    "node": ">=8.0.0"
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.3.3",
