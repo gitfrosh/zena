@@ -18,6 +18,6 @@ In a future scenario this app is not running on Ethereum/Polygon testnet (fork),
 
 ## Deployment
 
-This project is online in a test version, deployed decentrally at Sphereon / Filecoin network: [zena-cqgcg.spheron.app](https://zena-cqgcg.spheron.app/)
+This project is online in a test version, deployed decentrally at Sphereon / Filecoin network: [zena-5a2u9.spheron.app/](https://zena-5a2u9.spheron.app/)
 
 
