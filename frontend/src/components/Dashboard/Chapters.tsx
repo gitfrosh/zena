@@ -4,8 +4,8 @@ export default function Chapters() {
   const chapters = [
     { name: "Web3 Basics", path: "/1", url: '/Kachel-1_Web3-basics.jpg' },
     { name: "Blockchain und Token", path: "/2", url: '/Kachel-2_Blockchain.jpg' },
-    { name: "Wallets / Schlüssel-verwahrung", path: "/3", url: '/kachel-3_wallet.jpg' },
-    { name: "NFT minten", path: "/4", url: '/kachel-4_mint.jpg' },
+    { name: "NFT minten", path: "/3", url: '/kachel-4_mint.jpg' },
+    { name: "Wallets / Schlüssel-verwahrung", path: "/4", url: '/kachel-3_wallet.jpg' },
     { name: "DAOs", path: "/5", url: '/Kachel-5_Dao.jpg' },
     { name: "DEFI und REFI", path: "/6", url: '/kachel-6_defi.jpg' },
   ];
@@ -21,7 +21,7 @@ export default function Chapters() {
         {chapters.map((chapter: any) => {
           return (
             <div className="col-span-4 md:col-span-2">
-              <div className="p-6 lg:h-[700px] bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+              <div className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                 <svg
                   className="mb-2 w-10 h-10 text-gray-500 dark:text-gray-400"
                   aria-hidden="true"
@@ -44,7 +44,7 @@ export default function Chapters() {
                     {chapter.name}
                   </h5>
                 </Link>
-                <img src={chapter.url} alt="" />
+                <img src={chapter.url} alt="" className="" />
                 <Link
                   to={`/chapters${chapter.path}`}
                   className="mt-3 inline-flex items-center text-blue-600 hover:underline w-full"
