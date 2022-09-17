@@ -13,7 +13,9 @@ export const textState = atom({
 
 export const userState = atom({
   key: "userState",
-  default: {},
+  default: {
+    name: "Blue",
+  },
 });
 
 export const walletOpen = atom({

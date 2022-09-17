@@ -1,11 +1,10 @@
-import { Fragment, useState } from "react";
-import { Dialog, Transition } from "@headlessui/react";
-import { CheckIcon } from "@heroicons/react/24/outline";
-import { walletOpen } from "../../utils/store";
+import { CurrencyDollarIcon } from "@heroicons/react/24/outline";
+import { userState, walletOpen } from "../../utils/store";
 import { useRecoilState } from "recoil";
 
 export default function Modal() {
   const [open, setOpen] = useRecoilState(walletOpen);
+  const [user] = useRecoilState(userState);
 
   if (!open) return null;
 
@@ -16,7 +15,7 @@ export default function Modal() {
           <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
             <div className="flex justify-between items-center p-5 rounded-t border-b dark:border-gray-600">
               <h3 className="text-xl font-medium text-gray-900 dark:text-white">
-                Default modal
+                {user.name}'s Wallet
               </h3>
               <button
                 onClick={() => setOpen(false)}
@@ -41,34 +40,57 @@ export default function Modal() {
               </button>
             </div>
             <div className="p-6 space-y-6">
-              <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                With less than a month to go before the European Union enacts
-                new consumer privacy laws for its citizens, companies around the
-                world are updating their terms of service agreements to comply.
-              </p>
-              <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                The European Union’s General Data Protection Regulation
-                (G.D.P.R.) goes into effect on May 25 and is meant to ensure a
-                common set of data rights in the European Union. It requires
-                organizations to notify users as soon as possible of high-risk
-                data breaches that could personally affect them.
-              </p>
-            </div>
-            <div className="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600">
-              <button
-                data-modal-toggle="medium-modal"
-                type="button"
-                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                I accept
-              </button>
-              <button
-                data-modal-toggle="medium-modal"
-                type="button"
-                className="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600"
-              >
-                Decline
-              </button>
+              <div className="relative overflow-hidden rounded-lg bg-white px-4 pt-5 pb-12 shadow sm:px-6 sm:pt-6">
+                <dt>
+                  <div className="absolute rounded-md bg-indigo-500 p-3">
+                    <CurrencyDollarIcon
+                      className="h-6 w-6 text-white"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <p className="ml-16 truncate text-sm font-medium text-gray-500">
+                    Kontostand
+                  </p>
+                </dt>
+                <dd className="ml-16 flex items-baseline pb-6 sm:pb-7">
+                  <p className="text-2xl font-semibold text-gray-900">
+                    0.00211 GoerliETH
+                  </p>
+                </dd>
+                <div className="flex items-center space-x-2">
+                  <button
+                    data-modal-toggle="medium-modal"
+                    type="button"
+                    className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    Ich brauche mehr Coins!
+                  </button>
+                  <button
+                    data-modal-toggle="medium-modal"
+                    type="button"
+                    className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    Coins versenden!
+                  </button>
+                </div>
+                <div
+                  className="inset-0 p-12 flex items-center"
+                  aria-hidden="true"
+                >
+                  <div className="w-full border-t border-gray-300" />
+                </div>
+                <div className="border-b border-gray-200 pb-5">
+                  <h3 className="text-lg font-medium leading-6 text-gray-900">
+                    {user.name}'s NFTs
+                  </h3>
+                  <p className="mt-2 text-sm text-gray-500">
+                    Workcation is a property rental website. Etiam ullamcorper
+                    massa viverra consequat, consectetur id nulla tempus.
+                    Fringilla egestas justo massa purus sagittis malesuada.
+                  </p>
+                  <p className="p-6">--</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
