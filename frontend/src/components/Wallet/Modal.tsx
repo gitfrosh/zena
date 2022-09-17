@@ -127,10 +127,8 @@ export default function Modal() {
                                 {user.name}'s NFTs
                               </h3>
                               <p className="mt-2 text-sm text-gray-500">
-                                Workcation is a property rental website. Etiam
-                                ullamcorper massa viverra consequat, consectetur
-                                id nulla tempus. Fringilla egestas justo massa
-                                purus sagittis malesuada.
+                                Hier sind alle deine geminteten oder gekauften
+                                NFTs zu sehen.
                               </p>
                               <p className="p-6">
                                 <div className="grid grid-cols-4 gap-4">
