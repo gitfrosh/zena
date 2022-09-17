@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 
 export default function Chapters() {
   const chapters = [
-    { name: "Web3 Basics", path: "/1" },
-    { name: "Blockchain und Token", path: "/2" },
-    { name: "NFT", path: "/3" },
-    { name: "Wallets / Schlüsselverwahrung", path: "/4" },
-    { name: "NFT minten", path: "/5" },
-    { name: "DAOs", path: "/6" },
-    { name: "DEFI und REFI", path: "/6" },
+    { name: "Web3 Basics", path: "/1", url: '/Kachel-1_Web3-basics.jpg' },
+    { name: "Blockchain und Token", path: "/2", url: '/Kachel-2_Blockchain.jpg' },
+    { name: "NFT", path: "/3", url: '/blockchain-and-token.png' },
+    { name: "Wallets / Schlüssel-verwahrung", path: "/4", url: '/blockchain-and-token.png' },
+    { name: "NFT minten", path: "/5", url: '/blockchain-and-token.png' },
+    { name: "DAOs", path: "/6", url: '/blockchain-and-token.png' },
+    { name: "DEFI und REFI", path: "/6", url: '/blockchain-and-token.png' },
   ];
 
   return (
@@ -45,24 +45,12 @@ export default function Chapters() {
                     {chapter.name}
                   </h5>
                 </Link>
-                <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">
-                  Go to this step by step guideline process on how to certify
-                  for your weekly benefits:
-                </p>
+                <img src={chapter.url} alt="" />
                 <Link
                   to={`/chapters${chapter.path}`}
-                  className="inline-flex items-center text-blue-600 hover:underline"
+                  className="mt-3 inline-flex items-center text-blue-600 hover:underline w-full"
                 >
-                  Jetzt beginnen
-                  <svg
-                    className="ml-2 w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
-                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
-                  </svg>
+                  Los!
                 </Link>
               </div>
             </div>

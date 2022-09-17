@@ -1,5 +1,5 @@
 import { Disclosure } from "@headlessui/react";
-import { BellIcon, WalletIcon } from "@heroicons/react/24/outline";
+import { WalletIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { userState, walletOpenState } from "../utils/store";
@@ -22,19 +22,12 @@ export default function App({ children }: any) {
                     <div className="flex items-center px-2 lg:px-0">
                       <div className="flex-shrink-0">
                         <Link to="/">
-                          <span className="text-white">zena</span>
+                          <span className="text-white">ZENA</span>
                         </Link>
                       </div>
                     </div>
                     <div className="lg:ml-4 lg:block">
                       <div className="flex items-center">
-                        <button
-                          type="button"
-                          className="flex-shrink-0 rounded-full bg-indigo-600 p-1 text-indigo-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
-                        >
-                          <span className="sr-only">View notifications</span>
-                          <BellIcon className="h-12 w-12" aria-hidden="true" />
-                        </button>
                         <button
                           onClick={() => setWalletOpen(!isWalletOpen)}
                           type="button"

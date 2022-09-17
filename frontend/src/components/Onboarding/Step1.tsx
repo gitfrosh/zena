@@ -19,7 +19,6 @@ export default function Step1() {
             name="name"
             id="name"
             className="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0 text-lg"
-            placeholder="Jane Smith"
           />
         </div>
       </div>

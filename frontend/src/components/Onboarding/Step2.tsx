@@ -23,7 +23,6 @@ export default function Step2() {
               name="email"
               id="email"
               className="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0 text-lg"
-              placeholder="you@example.com"
             />
           </div>
         </div>
