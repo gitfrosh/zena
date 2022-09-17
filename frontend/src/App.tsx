@@ -1,12 +1,9 @@
-import Layout from "./components/Layout";
-import Home from "./pages/Home";
 import { RecoilRoot } from "recoil";
 import { useState } from "react";
 import Onboarding from "./pages/Onboarding";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Fragment } from "react";
-import { Popover, Transition } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Dashboard from "./pages/Dashboard";
+import Chapter from "./pages/Chapter";
 
 const navigation = [
   { name: "Product", href: "#" },
@@ -75,9 +72,10 @@ export default function App() {
             <Onboarding />
           </Route>
           <Route path="/dashboard">
-            <Layout>
-              <Home />
-            </Layout>
+            <Dashboard />
+          </Route>
+          <Route path={`/chapters/:chapterId`}>
+            <Chapter />
           </Route>
           <Route path="/">
             <Start />
@@ -85,12 +83,5 @@ export default function App() {
         </Switch>
       </Router>
     </RecoilRoot>
-    //
-    //   {!isLoggedIn ? (
-    //     <Onboarding />
-    //   ) : (
-
-    //   )}
-    // </RecoilRoot>
   );
 }
