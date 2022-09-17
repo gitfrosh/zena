@@ -13,10 +13,14 @@ export const textState = atom({
 
 export const userState = atom({
   key: "userState",
-  default: {},
+  default: {
+    name: "Blue",
+    imageUrl:
+      "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+  },
 });
 
-export const walletOpen = atom({
+export const walletOpenState = atom({
   key: "walletOpen",
   default: false,
 });
@@ -24,6 +28,11 @@ export const walletOpen = atom({
 export const avatarNumber = atom({
   key: "avatarNumber",
   default: 0,
+});
+
+export const mintState = atom({
+  key: "mintState",
+  default: false,
 });
 
 // example on how to use in component:

@@ -1,9 +1,11 @@
 import { RecoilRoot } from "recoil";
 import { useState } from "react";
 import Onboarding from "./pages/Onboarding";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Chapter from "./pages/Chapter";
+import WalletModal from "./components/Wallet/Modal";
+// import IpfsRouter from "ipfs-react-router";
 
 export default function App() {
   const [isLoggedIn,] = useState(false);
@@ -25,12 +27,12 @@ export default function App() {
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
-                    <a
-                      href={isLoggedIn ? "/home" : "/onboarding"}
+                    <Link
+                      to={isLoggedIn ? "/home" : "/onboarding"}
                       className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg"
                     >
                       {isLoggedIn ? "Weiter geht's" : "Los geht's"}
-                    </a>
+                    </Link>
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3">
                     <a
@@ -58,22 +60,16 @@ export default function App() {
 
   return (
     <RecoilRoot>
-      <Router>
-        <Switch>
-          <Route path="/onboarding">
-            <Onboarding />
-          </Route>
-          <Route path="/dashboard">
-            <Dashboard />
-          </Route>
-          <Route path={`/chapters/:chapterId`}>
-            <Chapter />
-          </Route>
-          <Route path="/">
-            <Start />
-          </Route>
-        </Switch>
-      </Router>
+      <BrowserRouter>
+        <WalletModal />
+        <Routes>
+          <Route path="/" element={<Start />} />
+          <Route path="/onboarding" element={<Onboarding />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path={`/chapters/:chapterId`} element={<Chapter />} />
+          <Route path="*" element={<>Not found.</>} />
+        </Routes>
+      </BrowserRouter>
     </RecoilRoot>
   );
 }

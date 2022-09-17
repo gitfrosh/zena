@@ -4,10 +4,11 @@ export default function Chapters() {
   const chapters = [
     { name: "Web3 Basics", path: "/1" },
     { name: "Blockchain und Token", path: "/2" },
-    { name: "Wallet / Schlüssel-verwahrer", path: "/3" },
-    { name: "NFT minten", path: "/4" },
-    { name: "DAO", path: "/5" },
-    { name: "Defi und Refi", path: "/6" },
+    { name: "NFT", path: "/3" },
+    { name: "Wallets / Schlüsselverwahrung", path: "/4" },
+    { name: "NFT minten", path: "/5" },
+    { name: "DAOs", path: "/6" },
+    { name: "DEFI und REFI", path: "/6" },
   ];
 
   return (
