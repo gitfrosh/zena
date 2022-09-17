@@ -21,7 +21,7 @@ export default function App({ children }: any) {
                   <div className="relative flex h-16 items-center justify-between lg:border-b lg:border-indigo-400 lg:border-opacity-25">
                     <div className="flex items-center px-2 lg:px-0">
                       <div className="flex-shrink-0">
-                        <Link to="/">
+                        <Link to="/dashboard">
                           <span className="text-white">ZENA</span>
                         </Link>
                       </div>
