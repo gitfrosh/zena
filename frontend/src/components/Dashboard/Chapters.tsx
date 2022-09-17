@@ -13,15 +13,15 @@ export default function Chapters() {
   return (
     <div className="container mx-auto pt-12 pb-12">
       <div className="border-b border-gray-200 pb-5">
-        <h2 className="text-2xl font-bold leading-7 sm:truncate sm:text-3xl sm:tracking-tight">
+        <h2 className="text-2xl text-center font-bold leading-7 sm:truncate sm:text-3xl sm:tracking-tight">
           Kapitel
         </h2>
       </div>
       <div className="grid grid-cols-4 gap-4 pt-12">
         {chapters.map((chapter: any) => {
           return (
-            <div className="col-span-4">
-              <div className="p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <div className="col-span-2">
+              <div className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                 <svg
                   className="mb-2 w-10 h-10 text-gray-500 dark:text-gray-400"
                   aria-hidden="true"
