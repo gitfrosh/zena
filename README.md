@@ -16,3 +16,8 @@ Still, all user interactions and transactions are "real" transactions on the cha
 
 In a future scenario this app is not running on Ethereum/Polygon testnet (fork), but on a private blockchain to keep a secure and enclosed playing ground.
 
+## Deployment
+
+This project is online in a test version, deployed decentrally at Sphereon / Filecoin network: [zena-cqgcg.spheron.app](https://zena-cqgcg.spheron.app/)
+
+

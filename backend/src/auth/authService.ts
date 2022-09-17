@@ -11,9 +11,9 @@ export interface RequestMessage {
   network: string;
 }
 
-const DOMAIN = "wordle-on-the-block.on.fleek.co";
+const DOMAIN = "zena-cqgcg.spheron.app";
 const STATEMENT = "Please sign this message to confirm your identity.";
-const URI = "https://wordle-on-the-block.on.fleek.co/";
+const URI = "https://zena-cqgcg.spheron.app/";
 const EXPIRATION_TIME = "2023-01-01T00:00:00.000Z";
 const TIMEOUT = 15;
 
