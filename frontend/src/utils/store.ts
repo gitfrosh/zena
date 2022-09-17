@@ -26,6 +26,11 @@ export const walletOpenState = atom({
   default: false,
 });
 
+export const avatarNumber = atom({
+  key: "avatarNumber",
+  default: 0,
+});
+
 export const mintState = atom({
   key: "mintState",
   default: false,
