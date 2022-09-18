@@ -99,28 +99,6 @@ export default function Modal() {
                                 0.00211 GoerliETH
                               </p>
                             </dd>
-                            <div className="flex items-center space-x-2">
-                              <button
-                                data-modal-toggle="medium-modal"
-                                type="button"
-                                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                              >
-                                Ich brauche mehr Coins!
-                              </button>
-                              <button
-                                data-modal-toggle="medium-modal"
-                                type="button"
-                                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                              >
-                                Coins versenden!
-                              </button>
-                            </div>
-                            <div
-                              className="inset-0 p-12 flex items-center"
-                              aria-hidden="true"
-                            >
-                              <div className="w-full border-t border-gray-300" />
-                            </div>
                             <Minting />
                             <div className="border-b border-gray-200 pb-5">
                               <h3 className="text-lg font-medium leading-6 text-gray-900">
@@ -131,7 +109,7 @@ export default function Modal() {
                                 NFTs zu sehen.
                               </p>
                               <p className="p-6">
-                                <div className="grid grid-cols-4 gap-4">
+                                <div className="grid grid-cols-2 gap-2">
                                   {Array.from(Array(user.nft)).map((x, i) => {
                                     return (
                                       <div className="border border-b border-indigo-300 border-opacity-25">

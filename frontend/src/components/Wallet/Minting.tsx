@@ -28,7 +28,7 @@ export default function Minting() {
 
   if (isDone) {
     return (
-      <div className="rounded-md bg-green-50 p-4 mb-6">
+      <div className="rounded-md bg-green-50 p-4 mt-1 mb-6">
         <div className="flex">
           <div className="flex-shrink-0">
             <CheckCircleIcon
@@ -40,12 +40,6 @@ export default function Minting() {
             <h3 className="text-sm font-medium text-green-800">
               Juhu! Dein NFT wurde erfolgreich gemintet!
             </h3>
-            <div className="mt-2 text-sm text-green-700">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-                pariatur, ipsum similique veniam.
-              </p>
-            </div>
           </div>
         </div>
       </div>
