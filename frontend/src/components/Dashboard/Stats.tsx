@@ -11,7 +11,7 @@ export default function Stats() {
           <div className="w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
             <div
               style={{ width: "30%" }}
-              className="h-6 bg-blue-600 rounded-full dark:bg-blue-500"
+              className="h-6 bg-green rounded-full dark:bg-blue-500"
             ></div>
           </div>
         </div>
@@ -23,7 +23,7 @@ export default function Stats() {
           <div className="w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
             <div
               style={{ width: "25%" }}
-              className="h-6 bg-green-600 rounded-full dark:bg-blue-500"
+              className="h-6 bg-blue rounded-full dark:bg-green-dark"
             ></div>
           </div>
         </div>

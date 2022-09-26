@@ -68,7 +68,7 @@ export default function Minting() {
               <p>
                 <button
                   onClick={() => setProcessing(true)}
-                  className="animate-bounce bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                  className="animate-bounce bg-green hover:bg-green-medium text-white font-bold py-2 px-4 rounded-full"
                 >
                   {isProcessing ? "Bitte warten ..." : "Freigeben"}
                 </button>

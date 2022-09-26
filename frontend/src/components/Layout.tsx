@@ -10,19 +10,19 @@ export default function App({ children }: any) {
   return (
     <>
       <div className="min-h-full">
-        <div className="bg-indigo-600 pb-32">
+        <div className="bg-yellow pb-32">
           <Disclosure
             as="nav"
-            className="border-b border-indigo-300 border-opacity-25 bg-indigo-600 lg:border-none"
+            className="border-b border-yellow border-opacity-25 bg-yellow lg:border-none"
           >
             {() => (
               <>
                 <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
-                  <div className="relative flex h-16 items-center justify-between lg:border-b lg:border-indigo-400 lg:border-opacity-25">
+                  <div className="relative flex h-16 items-center justify-between lg:border-b lg:border-yellow lg:border-opacity-25">
                     <div className="flex items-center px-2 lg:px-0">
                       <div className="flex-shrink-0">
                         <Link to="/dashboard">
-                          <span className="text-white">ZENA</span>
+                          <span className="text-yellow-dark">ZENA</span>
                         </Link>
                       </div>
                     </div>
@@ -31,7 +31,7 @@ export default function App({ children }: any) {
                         <button
                           onClick={() => setWalletOpen(!isWalletOpen)}
                           type="button"
-                          className="flex-shrink-0 rounded-full bg-indigo-600 p-1 text-indigo-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
+                          className="flex-shrink-0 rounded-full bg-yellow p-1 text-yellow-dark hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
                         >
                           <span className="sr-only">View wallet</span>
                           <WalletIcon

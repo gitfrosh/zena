@@ -46,15 +46,15 @@ export default function Modal() {
                       <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
                         <div className="flex justify-between p-5 rounded-t border-b dark:border-gray-600">
                           <div className="ml-4 mt-4">
-                            <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">
+                            <h2 className="text-2xl font-bold leading-7 text-font sm:truncate sm:text-3xl sm:tracking-tight">
                               {user.name}'s Wallet
                             </h2>
 
-                            <p className="mt-1 text-sm text-gray-500">
+                            <p className="mt-1 text-sm text-font-light">
                               Öffentliche Adresse: 0x1234
                             </p>
                           </div>
-                          <h3 className="text-xl font-medium text-gray-900 dark:text-white"></h3>
+                          <h3 className="text-xl font-medium text-font dark:text-white"></h3>
                           {/* <span>Öffentliche Adresse: 0x123456789101112</span> */}
                           <button
                             onClick={() => {
@@ -62,7 +62,7 @@ export default function Modal() {
                               setOpen(false);
                             }}
                             type="button"
-                            className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                            className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-font rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
                             data-modal-toggle="medium-modal"
                           >
                             <svg
@@ -84,27 +84,27 @@ export default function Modal() {
                         <div className="p-6">
                           <div className="relative overflow-hidden rounded-lg bg-white px-4 pt-5 pb-12 shadow sm:px-6 sm:pt-6">
                             <dt>
-                              <div className="absolute rounded-md bg-indigo-500 p-3">
+                              <div className="absolute rounded-md bg-green-medium p-3">
                                 <CurrencyDollarIcon
                                   className="h-6 w-6 text-white"
                                   aria-hidden="true"
                                 />
                               </div>
-                              <p className="pl-14 text-sm font-medium text-gray-500">
+                              <p className="pl-14 text-sm font-medium text-font-light">
                                 Kontostand
                               </p>
                             </dt>
                             <dd className="ml-16 flex items-baseline pb-6 sm:pb-7">
-                              <p className="text-2xl font-semibold text-gray-900">
+                              <p className="text-2xl font-semibold text-font">
                                 0.00211 GoerliETH
                               </p>
                             </dd>
                             <Minting />
                             <div className="border-b border-gray-200 pb-5">
-                              <h3 className="text-lg font-medium leading-6 text-gray-900">
+                              <h3 className="text-lg font-medium leading-6 text-font">
                                 {user.name}'s NFTs
                               </h3>
-                              <p className="mt-2 text-sm text-gray-500">
+                              <p className="mt-2 text-sm text-font-light">
                                 Hier sind alle deine geminteten oder gekauften
                                 NFTs zu sehen.
                               </p>

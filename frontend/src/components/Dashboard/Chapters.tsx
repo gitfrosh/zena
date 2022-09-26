@@ -37,7 +37,7 @@ export default function Chapters() {
                   to={`/chapters${chapter.path}`}
                   className="inline-flex items-center text-blue-600 hover:underline"
                 >
-                  <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                  <h5 className="mb-2 text-2xl font-semibold tracking-tight text-font dark:text-white">
                     {chapter.name}
                   </h5>
                 </Link>
@@ -46,7 +46,7 @@ export default function Chapters() {
                   to={`/chapters${chapter.path}`}
                   className="mt-3 inline-flex items-center text-blue-600 hover:underline w-full"
                 >
-                  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                  <button className="bg-green hover:bg-green-dark text-white font-bold py-2 px-4 rounded-full">
                     Los!
                   </button>
                 </Link>

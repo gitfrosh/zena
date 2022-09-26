@@ -35,10 +35,10 @@ const NFTQuiz = ({ step, setStep }: any) => {
     <>
       <form>
         <fieldset className="mt-6">
-          <legend className="text-base font-medium text-gray-900">
+          <legend className="text-base font-medium text-font">
             Teste dein Wissen über NFTs!
           </legend>
-          {/* <p className="text-sm text-gray-500">
+          {/* <p className="text-sm text-font-light">
           These are delivered via SMS to your mobile phone.
         </p> */}
           <div className="mt-4 space-y-4">
@@ -183,7 +183,7 @@ const NFTQuiz = ({ step, setStep }: any) => {
           onClick={() => {
             setStep(step + 1);
           }}
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+          className="bg-green hover:bg-green-medium text-white font-bold py-2 px-4 rounded-full"
         >
           Absenden
         </button>
@@ -211,7 +211,7 @@ const NFTMint = ({ step, setStep }: any) => {
           setMint(true);
           setStep(step + 1);
         }}
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+        className="bg-green hover:bg-green-medium text-white font-bold py-2 px-4 rounded-full"
       >
         Jetzt minten
       </button>
@@ -229,7 +229,7 @@ const NFTSuccess = () => {
       <section className="bg-white dark:bg-gray-900 mt-24">
         <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
           <div className="mx-auto max-w-screen-sm text-center">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white">
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-font dark:text-white">
               Super! Du hast deinen ersten NFT gemintet und alle Frage richtig
               beantwortet!
             </h2>
@@ -237,7 +237,7 @@ const NFTSuccess = () => {
               onClick={() => {
                 navigate("/dashboard");
               }}
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+              className="bg-green hover:bg-green-medium text-white font-bold py-2 px-4 rounded-full"
             >
               Zurück zum Dashboard
             </button>
@@ -273,7 +273,7 @@ export default function Chapter() {
           {(step === 1 || step === 2) && (
             <button
               onClick={() => setStep(step + 1)}
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+              className="bg-green hover:bg-green-medium text-white font-bold py-2 px-4 rounded-full"
             >
               Weiter
             </button>
